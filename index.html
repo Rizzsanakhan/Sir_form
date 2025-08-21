@@ -6,143 +6,159 @@
   <title>Manikya Clinic - Patient Registration</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-3xl">
-    <div class="flex items-center mb-6">
-      <img src="logo.png" alt="Clinic Logo" class="w-16 h-16 mr-4" />
-      <h1 class="text-2xl font-bold">Manikya Naturopathy Clinic</h1>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Fixed Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="flex items-center justify-between p-4">
+      <!-- Left Logo -->
+      <img src="IMG_3287.PNG" alt="Clinic Logo Left" class="w-16 h-16" />
+
+      <!-- Clinic Name -->
+      <h1 class="text-2xl font-bold text-center flex-1">
+        Manikya Naturopathy Clinic
+      </h1>
+
+      <!-- Right Logo -->
+      <img src="IMG_3288.PNG" alt="Clinic Logo Right" class="w-16 h-16" />
     </div>
+  </header>
 
-    <form id="patientForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <!-- Registration details -->
-      <div>
-        <label class="block text-sm font-medium">Patient ID</label>
-        <input type="text" id="regNumber" name="regNumber" readonly class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Date</label>
-        <input type="text" id="regDate" name="regDate" readonly class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Time</label>
-        <input type="text" id="regTime" name="regTime" readonly class="w-full border p-2 rounded" />
-      </div>
+  <!-- Main Form Section -->
+  <main class="flex items-center justify-center pt-32 pb-10">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-3xl">
 
-      <!-- Personal details -->
-      <div>
-        <label class="block text-sm font-medium">Full Name</label>
-        <input type="text" name="fullName" required class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Age</label>
-        <input type="number" name="age" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Gender</label>
-        <select name="gender" class="w-full border p-2 rounded">
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Contact Number</label>
-        <input type="text" name="contactNumber" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Email</label>
-        <input type="email" name="email" class="w-full border p-2 rounded" />
-      </div>
-      <div class="md:col-span-2">
-        <label class="block text-sm font-medium">Address</label>
-        <input type="text" name="address" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">City/District</label>
-        <input type="text" name="city" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Referred By</label>
-        <input type="text" name="referredBy" class="w-full border p-2 rounded" />
-      </div>
+      <form id="patientForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Registration details -->
+        <div>
+          <label class="block text-sm font-medium">Patient ID</label>
+          <input type="text" id="regNumber" name="regNumber" readonly class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Date</label>
+          <input type="text" id="regDate" name="regDate" readonly class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Time</label>
+          <input type="text" id="regTime" name="regTime" readonly class="w-full border p-2 rounded" />
+        </div>
 
-      <!-- Vitals -->
-      <div>
-        <label class="block text-sm font-medium">Height (cm)</label>
-        <input type="number" name="height" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Weight (kg)</label>
-        <input type="number" name="weight" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Blood Pressure</label>
-        <input type="text" name="bp" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Pulse</label>
-        <input type="text" name="pulse" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Temperature</label>
-        <input type="text" name="temp" class="w-full border p-2 rounded" />
-      </div>
+        <!-- Personal details -->
+        <div>
+          <label class="block text-sm font-medium">Full Name</label>
+          <input type="text" name="fullName" required class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Age</label>
+          <input type="number" name="age" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Gender</label>
+          <select name="gender" class="w-full border p-2 rounded">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Contact Number</label>
+          <input type="text" name="contactNumber" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" name="email" class="w-full border p-2 rounded" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium">Address</label>
+          <input type="text" name="address" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">City/District</label>
+          <input type="text" name="city" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Referred By</label>
+          <input type="text" name="referredBy" class="w-full border p-2 rounded" />
+        </div>
 
-      <!-- Complaints -->
-      <div class="md:col-span-2">
-        <label class="block text-sm font-medium">Presenting Complaint</label>
-        <input type="text" name="complaint" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Duration of Complaint</label>
-        <input type="text" name="duration" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Ongoing Treatment/Medication</label>
-        <input type="text" name="treatment" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Allergies</label>
-        <input type="text" name="allergies" class="w-full border p-2 rounded" />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Previous Visits</label>
-        <select name="previousVisits" class="w-full border p-2 rounded">
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-      </div>
+        <!-- Vitals -->
+        <div>
+          <label class="block text-sm font-medium">Height (cm)</label>
+          <input type="number" name="height" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Weight (kg)</label>
+          <input type="number" name="weight" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Blood Pressure</label>
+          <input type="text" name="bp" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Pulse</label>
+          <input type="text" name="pulse" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Temperature</label>
+          <input type="text" name="temp" class="w-full border p-2 rounded" />
+        </div>
 
-      <!-- Fee & Remarks -->
-      <div>
-        <label class="block text-sm font-medium">Consultation Fee Collected</label>
-        <select name="feeCollected" class="w-full border p-2 rounded">
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Fee Amount</label>
-        <input type="number" name="feeAmount" class="w-full border p-2 rounded" />
-      </div>
-      <div class="md:col-span-2">
-        <label class="block text-sm font-medium">Remarks</label>
-        <textarea name="remarks" class="w-full border p-2 rounded"></textarea>
-      </div>
+        <!-- Complaints -->
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium">Presenting Complaint</label>
+          <input type="text" name="complaint" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Duration of Complaint</label>
+          <input type="text" name="duration" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Ongoing Treatment/Medication</label>
+          <input type="text" name="treatment" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Allergies</label>
+          <input type="text" name="allergies" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Previous Visits</label>
+          <select name="previousVisits" class="w-full border p-2 rounded">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
 
-      <!-- Submit -->
-      <div class="md:col-span-2 flex justify-center mt-4">
-        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg">
-          Submit Registration
-        </button>
-      </div>
-    </form>
+        <!-- Fee & Remarks -->
+        <div>
+          <label class="block text-sm font-medium">Consultation Fee Collected</label>
+          <select name="feeCollected" class="w-full border p-2 rounded">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Fee Amount</label>
+          <input type="number" name="feeAmount" class="w-full border p-2 rounded" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium">Remarks</label>
+          <textarea name="remarks" class="w-full border p-2 rounded"></textarea>
+        </div>
 
-    <!-- Success message -->
-    <div id="successMessage" class="hidden mt-4 text-green-700 font-semibold">
-      ✅ Patient record saved successfully!
+        <!-- Submit -->
+        <div class="md:col-span-2 flex justify-center mt-4">
+          <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg">
+            Submit Registration
+          </button>
+        </div>
+      </form>
+
+      <!-- Success message -->
+      <div id="successMessage" class="hidden mt-4 text-green-700 font-semibold">
+        ✅ Patient record saved successfully!
+      </div>
     </div>
-  </div>
+  </main>
 
   <script>
     const form = document.getElementById('patientForm');
